@@ -1,0 +1,9 @@
+import warnings
+
+warnings.simplefilter("ignore", SyntaxWarning)
+
+try:
+    warnings.warn("Syntax poehal", SyntaxWarning)
+    print("test")
+except:
+    print("warning processed")
